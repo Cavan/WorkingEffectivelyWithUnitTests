@@ -1,18 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using UnitTesting.Enums;
+using UnitTesting.Rocket;
 
 namespace Rocket.UnitTesting
 {
-    public class RocketEngine
+    public class RocketEngine : IRocketEngine
     {
         public RocketEngine() { }
 
-        public bool StartEngine(Enum command)
+        public bool EmergencyEngineShutDown(RocketEngineEnums command)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public bool FuelEngine(RocketEngineEnums command)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public bool StartEngine(RocketEngineEnums command)
         {
             return false;
+        }
+
+        public bool StopEngine(RocketEngineEnums command)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public bool StopFuelingEngine(RocketEngineEnums command)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

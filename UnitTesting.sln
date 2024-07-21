@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTesting", "UnitTesting\UnitTesting.csproj", "{856190BD-148F-4863-A6D2-A0AA16C69BFA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeUnderTest", "UnitTesting\CodeUnderTest.csproj", "{856190BD-148F-4863-A6D2-A0AA16C69BFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitialUnitTest", "InitialUnitTest\InitialUnitTest.csproj", "{227A9527-D764-4ACD-8C33-256356C536C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "InitialUnitTest\UnitTests.csproj", "{227A9527-D764-4ACD-8C33-256356C536C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

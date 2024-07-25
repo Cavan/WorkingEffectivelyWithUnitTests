@@ -8,5 +8,10 @@ namespace UnitTesting.DomainCode
 {
     public abstract class Price
     {
+        public abstract double GetCharge(int daysRented);
+        public virtual int GetPoints(int daysRented)
+        {
+            return 1;
+        }
     }
 }

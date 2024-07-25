@@ -6,21 +6,39 @@ using System.Threading.Tasks;
 
 namespace UnitTesting.DomainCode
 {
+
     public class Rental
     {
-        internal double GetCharge()
+        private Movie _movie;
+        private int daysRented;
+
+        public Rental(Movie movie, int daysRented) 
         {
-            throw new NotImplementedException();
+            this._movie = movie;
+            this.daysRented = daysRented;
         }
 
-        internal string GetLineItem()
+        public Movie GetMovie()
         {
-            throw new NotImplementedException();
+            return _movie;
         }
 
-        internal int GetPoints()
+        public int GetDaysRented()
         {
-            throw new NotImplementedException();
+            return daysRented;
+        }
+        public double GetCharge()
+        {
+            return _movie.GetCharge(daysRented);
+        }
+
+        public int GetPoints()
+        {
+            return _movie.GetPoints(daysRented);
+        }
+        public string GetLineItem()
+        {
+            return _movie.GetTitle() + " " + GetCharge();
         }
     }
 }
